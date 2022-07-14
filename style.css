@@ -1,0 +1,248 @@
+:root {
+  /* colors */
+  --clr-primary-900: hsl(300, 43%, 22%);
+  --clr-primary-400: hsl(333, 80%, 67%);
+
+  --clr-neutral-600: hsl(303, 10%, 53%);
+  --clr-neutral-400: hsl(300, 24%, 96%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  /* typography */
+
+  /* font family */
+  --ff-primary: "Be Vietnam Pro", sans-serif;
+  /* font size */
+  --fs-100: 0.9375rem;
+
+  /* font weight  */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* layout */
+  --mobile-width: 23.4375em;
+
+  /* radius */
+  --br : .5rem;
+}
+
+/* css reset by Andy Bell */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* utility classes */
+
+/* colors */
+.text-primary-900 {
+  color: var(--clr-primary-900);
+}
+.text-primary-400 {
+  color: var(--clr-primary-400);
+}
+.text-neutral-600 {
+  color: var(--clr-neutral-600);
+}
+.text-neutral-400 {
+  color: var(--clr-neutral-400);
+}
+.text-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+
+.bg-primary-900 {
+  background-color: var(--clr-primary-900);
+}
+.bg-primary-400 {
+  background-color: var(--clr-primary-400);
+}
+.bg-neutral-600 {
+  background-color: var(--clr-neutral-600);
+}
+.bg-neutral-400 {
+  background-color: var(--clr-neutral-400);
+}
+.bg-neutral-100 {
+  background-color: var(--clr-neutral-100);
+}
+
+
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-100);
+  font-weight: var(--fw-regular);
+  color: var(--clr-neutral-600);
+}
+
+h1 {
+  color: var(--clr-primary-900);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin: 2rem 0;
+}
+
+.intro {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.reviews {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+
+
+.reviews > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .6rem;
+  width: 100%;
+  max-width: 40rem;
+  background-color: var(--clr-neutral-400); 
+  padding: 1rem 2rem;
+  border-radius: var(--br)
+}
+
+.stars {
+  display: flex;
+  gap: .5rem;
+}
+
+
+.review {
+  color: var(--clr-primary-900);
+  font-weight: var(--fw-bold);
+}
+
+
+.quotes {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 40rem;
+  background-color: var(--clr-primary-900);
+  border-radius: var(--br)
+}
+
+.quote > div {
+  width: 80%;
+  display: flex;
+  margin-top: 3rem;;
+}
+
+.quote > div > img {
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  margin-right: 2rem;
+}
+
+.name {
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-bold);
+}
+
+.status {
+  color: var(--clr-primary-400);
+  font-weight: var(--fw-medium)
+}
+
+.comment {
+  width: 80%;
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-medium);
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+
+
