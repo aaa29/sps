@@ -17,7 +17,7 @@
   /* font weight  */
   --fw-regular: 400;
   --fw-medium: 500;
-  --fw-bold: 700;
+  --fw-bold: 800;
 
   /* layout */
   --mobile-width: 23.4375em;
@@ -140,6 +140,8 @@ body {
 
 h1 {
   color: var(--clr-primary-900);
+  font-weight: var(--fw-bold);
+  line-height: normal;
 }
 
 main {
